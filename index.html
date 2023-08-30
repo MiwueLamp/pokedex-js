@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKEDEX-JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="" id="logo">PokeApi - js</a>
+      <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off" id="buscar" placeholder="Busca tu pokemon">
+      </form>
+      <button id="btn-buscar" name="pokemon" onclick="buscar()">
+        Buscar
+      </button>
+    </nav>
+    <br />
+    <div class="botonera" id="botonera">
+      <button class="botones" id="antes">Anterior</button>
+      <button class="botones" id="siguiente">Siguiente</button>
+    </div>
+
+    <main>
+      <div class="contenedor" id="pokedexContenido"></div>
+<!-----------------------------------------------------DIV DE BUSQUEDA-->
+      <div id="busqueda" style="display: none;">
+        <span id="pokemensaje">ESTA ES LA INFORMACION DE TU POKEMON</span>
+        <strong id="str"></strong>
+        <div id="contenedor2">
+
+
+        </div>
+        <button onclick="salir()" id="salir">Salir</button>
+      </div>
+  
+</div>
+    </main>
+  </body>
+  <script src="controler.js"></script>
+  <script src="busqueda.js"></script>
+</html>
